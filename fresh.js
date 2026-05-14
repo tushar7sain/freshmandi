@@ -1,1 +1,3 @@
-console("Hello world")
+function scrollToContent() {
+    document.getElementById("line").scrollIntoView({ behavior: "smooth" });
+}

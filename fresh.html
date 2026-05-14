@@ -1,11 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Freshmandi</title>
+    <link rel="stylesheet" href="fresh.css">
+    <script src="fresh.js"></script>
 </head>
+
 <body>
-    
+
+    <!-- navbar -->
+
+    <nav>
+        <div class="nav-group1">
+            <div class="logo"><img src="assets/Logo.png" alt=""></div>
+            <ul class="nav-link">
+                <li><a href="http://127.0.0.1:5500/fresh.html">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Sell</a></li>
+                <li><a href="">My Orders</a></li>
+                <li><a href="">About us</a></li>
+            </ul>
+        </div>
+        <div class="nav-group2">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                    fill="none">
+                    <path d="M17 17L21 21" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                        stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                    color="#000000" fill="none">
+                    <path d="M8 16L16.7201 15.2733C19.4486 15.046 20.0611 14.45 20.3635 11.7289L21 6" stroke="#141B34"
+                        stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M6 6H22" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" />
+                    <circle cx="6" cy="20" r="2" stroke="#141B34" stroke-width="1.5" />
+                    <circle cx="17" cy="20" r="2" stroke="#141B34" stroke-width="1.5" />
+                    <path d="M8 20L15 20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" />
+                    <path
+                        d="M2 2H2.966C3.91068 2 4.73414 2.62459 4.96326 3.51493L7.93852 15.0765C8.08887 15.6608 7.9602 16.2797 7.58824 16.7616L6.63213 18"
+                        stroke="#141B34" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+                <span>0</span>
+            </div>
+            <div class="nav-btn">
+                <a href="http://127.0.0.1:5500/login.html#"><button class="btn1">Log in</button></a>
+            </div>
+        </div>
+    </nav>
+    <div class="corner-icon">
+        <img src="assets/icon.png" alt="">
+    </div>
+
+    <!-- Explore-button-page -->
+
+    <div class="box">
+        <h1 class="A">Freshness You Can Trust,</h1>
+        <h1 class="B">Prices Farmers Love.</h1>
+        <div class="btn">
+            <button class="btn2" onclick="scrollToContent()">Explore</button>
+        </div>
+    </div>
+
+    <!-- main-body -->
+    <div id="line" class="line"></div>
+    <div class="box2">
+
+        <!-- food-menu -->
+
+        <h2 class="heading">food menu</h2>
+        <div class="menu-list">
+            <div class="menu-item">
+                <img src="assets/vegetable.png" alt="">
+                <h5>Vegetables</h5>
+            </div>
+            <div class="menu-item">
+                <img src="assets/fruits.png" alt="">
+                <h5>Fruits</h5>
+            </div>
+            <div class="menu-item">
+                <img src="assets/pulses.png" alt="">
+                <h5>Organic Pulses</h5>
+            </div>
+            <div class="menu-item">
+                <img src="assets/wheat.png" alt="">
+                <h5>Wheat</h5>
+            </div>
+            <div class="menu-item">
+                <img src="assets/rice.png" alt="">
+                <h5>Rice</h5>
+            </div>
+            <div class="menu-item">
+                <img src="assets/maize.png" alt="">
+                <h5>Maize</h5>
+            </div>
+            <div class="menu-item">
+                <img src="assets/dairy.png" alt="">
+                <h5>Dairy</h5>
+            </div>
+        </div>
+
+        <!-- card-item-selection  -->
+
+        <h2 class="select-heading">Menu Items</h2>
+        <div class="card-list">
+            <div class="card">
+                <img src="assets/tomatoes.png" alt="">
+                <h4>Fresh Tomatoes</h4>
+                <div class="card-price">
+                    <div class="price">₹30/kg</div>
+
+                    <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/onion.png" alt="">
+                <h4>Onion</h4>
+                <div class="card-price">
+                    <div class="price">₹30/kg</div>
+
+                    <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/cucumber.png" alt="">
+                <h4>Cucumber</h4>
+                <div class="card-price">
+                    <div class="price">₹30/kg</div>
+
+                    <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/potato.png" alt="">
+                <h4>Potato</h4>
+                <div class="card-price">
+                    <div class="price">₹30/kg</div>
+
+                    <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/bringel.png" alt="">
+                <h4>Bringel</h4>
+                <div class="card-price">
+                    <div class="price">₹30/kg</div>
+
+                    <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- second-list  -->
+        <div class="card-list">
+            <div class="card">
+                <img src="assets/tomatoes.png" alt="">
+                <h4>Fresh Tomatoes</h4>
+                <div class="card-price">
+                    <div class="price">₹30/kg</div>
+
+                    <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/onion.png" alt="">
+                <h4>Onion</h4>
+                <div class="card-price">
+                    <div class="price">₹30/kg</div>
+
+                    <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/cucumber.png" alt="">
+                <h4>Cucumber</h4>
+                <div class="card-price">
+                    <div class="price">₹30/kg</div>
+
+                    <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/potato.png" alt="">
+                <h4>Potato</h4>
+                <div class="card-price">
+                    <div class="price">₹30/kg</div>
+
+                    <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/bringel.png" alt="">
+                <h4>Brinjal</h4>
+                <div class="card-price">
+                    <div class="price">₹30/kg</div>
+
+                    <svg class="plus_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path
+                            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                        <path d="M12 8V16M16 12H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- top-seller  -->
+    <h2 class="top-seller-heading">Top seller </h2>
+    <div class="profile-list">
+        <div class="profile">
+            <div class="image">
+            <img src="assets/profile.webp" alt="">
+            </div>
+            <h4>Gaurav gendu</h4>
+
+            <a href="https://wa.me/919999999999?text=Hello"><button class="btn-contact">Contact</button> </a>
+        </div>
+
+        <div class="profile">
+            <div class="image">
+            <img src="assets/profile.webp" alt="">
+            </div>
+            <h4>Sneha</h4>
+
+            <a href="https://wa.me/919999999999?text=Hello"><button class="btn-contact">Contact</button> </a>
+        </div>
+
+        <div class="profile">
+            <div class="image">
+            <img src="assets/profile.webp" alt="">
+            </div>
+            <h4>Kushagar</h4>
+
+            <a href="https://wa.me/919999999999?text=Hello"><button class="btn-contact">Contact</button> </a>
+        </div>
+
+        <div class="profile">
+            <div class="image">
+            <img src="assets/profile.webp" alt="">
+            </div>
+            <h4>Aunkar</h4>
+            
+            <a href="https://wa.me/919999999999?text=Hello"><button class="btn-contact">Contact</button> </a>
+        </div>
+    </div>
+
+    <!-- card-sidebar-section -->
+    <div class="sidebar" id=" sidebar">
+        <div class="sidebar-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                fill="none">
+                <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="#141B34" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="cart-menu">
+            <h3>My Cart</h3>
+            <div class="cart-items">test-1</div>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="total-amount">
+                <h5>Total</h5>
+                <div class="cart-total">₹0</div>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- description -->
+
+    <div class="description">
+        <div class="desc-list">
+            <ul class="first">
+                <li>Get to Know Us</li>
+                <li>About Freshmandi</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+            </ul>
+
+            <ul class="second">
+                <li>Connect with Us</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+
+            <ul class="third">
+                <li>Make Money with Us</li>
+                <li>Sell on Freshmandi</li>
+                <li>Sell under Freshmandi Accelerator</li>
+                <li>Protect and Build Your Brand</li>
+                <li>Freshmandi Global Selling</li>
+                <li>Supply to Freshmandi</li>
+                <li>Advertise Your Products</li>
+            </ul>
+
+            <ul class="fourth">
+                <li>Let Us Help You</li>
+                <li>Your Account</li>
+                <li>Returns Centre</li>
+                <li>Recalls and Product Safety Alerts</li>
+                <li>100% Purchase Protection</li>
+                <li>Freshmandi App Download</li>
+                <li>Help</li>
+            </ul>
+        </div>
+        <ul class="bottom-list">
+            <li>Conditions of Use & Sale</li>
+            <li>Privacy Notice</li>
+            <li>Interest-Based Ads</li>
+        </ul>
+        <div class="last"> @2025,Freshmandi.com, Inc. or its affiliates</div>
+    </div>
+
 </body>
+
 </html>
