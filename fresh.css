@@ -321,18 +321,11 @@ nav .nav-group1 {
     max-height: 250px;
     border-radius: 30px;
 }
-.image::before{
-    content: "";
-    position: absolute;
-    background-color: #89d957;
-    width: 300px;
-    height: 100px;
-}
 .image img{
     width: 100px;
     height: 100px;
-    border: 1px solid black;
-    border-radius: 50px;
+    border: 10px solid rgba(43, 179, 33, 0.823);
+    border-radius: 50%;
 }
 .profile h4{
     font-size: 20px;
@@ -365,8 +358,8 @@ nav .nav-group1 {
     height: 600px;
     position: fixed;
     top: 83px;
-    /* right: 0;         */
-    right: -350px;
+    right: 0;        
+    right: -370px;
     background-color: white;
     box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease-in-out;
@@ -376,7 +369,7 @@ nav .nav-group1 {
     border-bottom-left-radius: 20px;
 }
 
-.sidebar .open {
+.sidebar.open {
     right: 0;
 }
 
@@ -387,20 +380,52 @@ nav .nav-group1 {
     cursor: pointer;
 }
 
-.cart-items {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 16px;
+.cart-menu h3{
+    padding: 10px 3px;
 }
 
+/* cart scroll */
+
 .cart-items {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* cart item */
+
+.cart-item {
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    color: rgb(143, 142, 142);
-    border: 1px solid rgba(210, 210, 210, 0.888);
+}
+
+/* quantity section */
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-box button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #087226;
+    color: white;
+}
+
+.quantity-box span {
+    font-weight: 600;
 }
 
 .sidebar-footer {
@@ -445,12 +470,16 @@ nav .nav-group1 {
     background-color: #000000;
     z-index: -1;
     color: #ffffff;
+    
 }
 
 .desc-list {
     padding: 100px;
     display: flex;
     justify-content: space-around;
+}
+.desc-list a{
+    color: rgba(255, 255, 255, 0.715);
 }
 
 .first {
