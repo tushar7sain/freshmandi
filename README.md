@@ -17,10 +17,10 @@ FreshMandi is a frontend e-commerce website for farmers built using HTML, CSS, a
 ## Screenshots
 
 ### Homepage
-![Homepage](./screenshots/home.png)
+![Homepage](./Screenshots/home.png)
 
 ### Cart Section
-![Cart](./screenshots/cart.png)
+![Cart](./Screenshots/cart.png)
 
 ## Live Demo
 Coming Soon
